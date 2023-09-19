@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture webbsite</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        *{
+            font-family: cursive;
+        }
+        .words{
+            text-decoration: overline white;
+            font-size: 30px;
+            line-height: 120px;
+        }
+        .login{
+            margin-right: 40px;
+            
+        }
+    </style>
+</head>
+<body class="grey darken-3">
+    <!-- header -->
+    <section>
+        <div class="navbar-fixed">
+            <nav class="black white-text">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="" class="brand-logo">
+                            <img src="img/logo.jpg" alt="" width="60vw" class="responsive-img"> 
+                        </a>
+                        <a href="#bar" class="sidenav-trigger left">
+                            <img src="img/menu.svg" alt="" class=" black-text">
+                        </a>
+                        <ul class="right hide-on-small-and-down">
+                            <li><a href="" class="white-text">Home</a></li>
+                            <li><a href="" class="white-text">About Us</a></li>
+                            <li><a href="" class="white-text">Services</a></li>
+                            <li><a href="" class="white-text">Contact Us</a></li>
+                            <li class="login" ><a href="form.html"><i class="material-icons circle">person</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav black" id="bar" >
+            <li><a href="" class="white-text">Home</a></li>
+            <li><a href="" class="white-text">About Us</a></li>
+            <li><a href="" class="white-text">Services</a></li>
+            <li><a href="" class="white-text">Contact Us</a></li>
+        </ul>
+                    </div>
+                </div>
+        </nav>
+        </div>
+    </section>
+    
+    <section>
+        
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/furvid - frame at 0m4s.jpg" width="">
+                </div>
+            </div>
+        <div class=" words center-align">
+            <a href="#" class="white-text">chairs</a>
+        </div>
+
+    </section>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script> 
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.slider').slider();
+        $('.parallax').parallax();
+    });
+
+</script>
+</body>
+</html>
