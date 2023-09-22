@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         *{
-            font-family: cursive;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .words{
             text-decoration: overline white;
@@ -18,6 +18,9 @@
         .login{
             margin-right: 40px;
             
+        }
+        .logo{
+            padding-top: 10%;
         }
     </style>
 </head>
@@ -29,7 +32,7 @@
                 <div class="nav-wrapper">
                     <div class="container">
                         <a href="" class="brand-logo">
-                            <img src="img/logo.jpg" alt="" width="50vw" class="responsive-img"> 
+                            <img src="img/logo.jpg" alt="" width="50vw" class="logo responsive-img"> 
                         </a>
                         <a href="#bar" class="sidenav-trigger left">
                             <img src="img/menu.svg" alt="" class=" black-text">
@@ -37,9 +40,14 @@
                         <ul class="right hide-on-small-and-down">
                             <li><a href="" class="white-text">Home</a></li>
                             <li><a href="" class="white-text">About Us</a></li>
-                            <li><a href="" class="white-text">Services</a></li>
+                            <li><a href="" class="white-text">Gallery</a></li>
                             <li><a href="" class="white-text">Contact Us</a></li>
-                            <li class="login white-text" ><a href="signup.html"><i class="material-icons circle">person</i></a></li>
+                            <li class="login"><a class='dropdown-trigger btn black' href='#' data-target='dropdown1'><i class="material-icons">person</i><span>accounts</span></a>
+                                <ul id='dropdown1' class='dropdown-content'>
+                                  <li><a href="login.html" class="black-text">login</a></li>
+                                  <li><a href="signup.html" class="black-text">signup</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -48,54 +56,63 @@
         <ul class="sidenav black" id="bar" >
             <li><a href="" class="white-text">Home</a></li>
             <li><a href="" class="white-text">About Us</a></li>
-            <li><a href="" class="white-text">Services</a></li>
+            <li><a href="" class="white-text">Gallery</a></li>
             <li><a href="" class="white-text">Contact Us</a></li>
-            <li class="login" ><a href="signup.html" class="white-text">login/signup</a></li>
+            <li><a class='dropdown-trigger white-text ' href='#' data-target='dropdown1'>accounts</a>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="login.html" class="black-text">login</a></li>
+                  <li><a href="signup.html" class="black-text">signup</a></li>
+                </ul>
+            </li>
         </ul>
-                    </div>
-                </div>
         </nav>
+    </section>
+    <section class="section">
+        <div class='slider'>
+            <ul class="slides">
+                <li>
+                    <img src="img/parall.jpg">
+                </li>
+                <li>
+                    <img src="img/new.jpg">
+                </li>
+                <li>
+                    <img src="img/furvid - frame at 0m4s.jpg" alt="">
+                </li>
+                
+            </ul>
         </div>
     </section>
-    
-    <section>
-        <div class="parallax-container">
-            <div class="parallax">
-                <img src="img/furvid - frame at 0m4s.jpg" width="500vw">
-            </div>
-        </div>
+    <section class="first">
+       
         <div>
             <div class=" words center-align">
-                <a href="#" class="white-text">SOFA</a>
+                <a href="#" class="white-text">CATEGORIES</a>
             </div>
             <div class="row">
                 <div class="col s12 m6 l4">
-                    <div class="card hoverable ">
+                    <div class="card z-depth-0 ">
                         <div class="card-image">
                             <img src="img/sofa3.jpeg" class="responsive-img">
                         </div>
                         <div class="card-content">
-                            <h6 class="black-text">sofa</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <h6 class="center-align">SITTING ROOM</h6>
                         </div>
-                        <div class="card-action">
-                            <a href="#">Add to cart</a>
-                            <a href="#">more info</a>
+                        <div class="card-action center-align">
+                            <a href="#">view more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m6 l4">
-                    <div class="card hoverable">
+                    <div class="card z-depth-0">
                         <div class="card-image">
                             <img src="img/sofa4.jpeg" alt="" class="responsive-img">
                         </div>
                         <div class="card-content">
-                            <h6 class="black-text">sofa</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <h6 class="black-text center-align">DINNING</h6>
                         </div>
-                        <div class="card-action">
-                            <a href="#">Add to cart</a>
-                            <a href="#">more info</a>
+                        <div class="card-action center-align">
+                            <a href="#" class="">view more</a>
                         </div>
                     </div>
                 </div>
@@ -105,18 +122,40 @@
                             <img src="img/sofa3.jpeg" alt="" class="responsive-img">
                         </div>
                         <div class="card-content">
-                            <h6 class="black-text">chair</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <h6 class="black-text center-align">BED ROOM</h6>
                         </div>
-                        <div class="card-action">
-                            <a href="#">Add to cart</a>
-                            <a href="#">more info</a>
+                        <div class="card-action center-align">
+                            <a href="#">view more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="black">
+            <div class="container">
+                <div class ="row" >
+                    <div class="col l4">
+                        <h4 class="grey-text">About Us</h4>
+                        <p class="white-text"></p>
+                    </div>
+                    <div class="col l4"></div>
+                    <div class="col l4">
+                        <h4 class="grey-text">Quick Links</h4>
+                        <ul>
+                            <li class="white-text"><a href="" class="white-text">to top</a> </li>
+                            <li class="white-text"><a href="" class="white-text">sofas</a></li>
+                            <li class="white-text"><a href="" class="white-text">dinning</a></li>
+                            <li class="white-text"><a href="" class="white-text"></a>office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="grey black-text center-align " id="para">&COPY;furnitures.com | DICHEE</p>
+        </div>
+    </footer>
+
     
 <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script> 
@@ -124,7 +163,7 @@
     $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.slider').slider();
-        $('.parallax').parallax();
+        $('.dropdown-trigger').dropdown();
     });
 
 </script>
