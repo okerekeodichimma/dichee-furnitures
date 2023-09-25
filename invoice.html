@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        *{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .container{
+                border: 5px black solid;
+                background-color: grey;
+                margin-top: 50px;
+                padding-top: 10px;
+            }
+    </style>
+</head>
+<body>
+<div class="container center-align">
+    <img src="img/logo.jpg" width="100vw">
+    <h1 class="black white-text">INVOICE FORM</h1>
+    <div class="row">
+        <div class="col s12">
+            <form action="">
+               <div class="input-field black-text">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" name='customer_name' id="customer_name">
+                    <label for="customer_name" class="black-text">CUSTOMER NAME:</label>
+                </div>
+                <div class="input-field black-text">
+                    <i class="material-icons prefix">key</i>
+                    <input type="text" name='product_name' id="product_name">
+                    <label for="product_name" class="black-text">PRODUCT NAME:</label>
+                </div>
+                <div class="input-field black-text">
+                    <i class="material-icons prefix">key</i>
+                    <input type="number" name='product_quantity' id="product_quantity">
+                    <label for="product_quantity" class="black-text">PRODUCT QUANTITY:</label>
+                </div>
+                <div class="input-field btn black white-text">
+                    <a href="" type="submit" name='submit' id="submit" class="white-text">enter</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script> 
+<script>
+    $(document).ready(function(){
+    });
+</script>
+</body>
+</html>

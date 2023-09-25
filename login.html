@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         *{
-            font-family: cursive;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .container{
             border: 5px black solid;
@@ -25,18 +25,20 @@
         <h1 class="black">LOGIN</h1>
         <div class="row">
             <div class="col s12">
-                <form action="" class="">
+                <form action="login.php" method="POST">
                     <div class="input-field black-text">
                         <i class="material-icons prefix">person</i>
-                        <input type="text" class="name" id="name">
+                        <input type="text" name='username' id="username">
                         <label for="name" class="black-text">USERNAME/EMAIL:</label>
                     </div>
                     <div class="input-field black-text">
                         <i class="material-icons prefix">key</i>
-                        <input type="password" class="password" id="password">
+                        <input type="password" name='password' id="password">
                         <label for="password" class="black-text">PASSWORD:</label>
                     </div>
-                    <button class="btn black white-text"><a href="" class="white-text">LOGIN</a></button>
+                    <div class="input-field btn black white-text">
+                        <a href="table.html" type="submit" name='submit' id="submit" class="white-text"> LOGIN</a>
+                    </div>
                 </form>
                 
             </div>
@@ -45,12 +47,11 @@
 
 
 
-
 <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script> 
 <script>
     $(document).ready(function(){
-        $('.')
+        
     });
 </script>
 </body>
